@@ -10,13 +10,14 @@ void setup() {
 }
 
 void loop() {
-  for(digitalInput = 40;digitalInput<95;digitalInput = digitalInput +10){
+  digitalInput = 40;
+  for(digitalInput = 80;digitalInput<105;digitalInput = digitalInput +15){
     Serial.println(digitalInput);     // Print Digital input in Serial monitor
     analogWrite(3, digitalInput);
     delay(tiempo);
 
   }
-    digitalInput = 250;
+    digitalInput = 150;
     Serial.println(digitalInput);     // Print Digital input in Serial monitor
     analogWrite(3, digitalInput);
     delay(tiempo*10);
