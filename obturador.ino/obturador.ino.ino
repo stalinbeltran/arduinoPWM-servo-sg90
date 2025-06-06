@@ -1,6 +1,8 @@
 
 int limiteInferior = 50; //50 es el minimo aceptado por el servo, aparentemente
-int tiempo = 4;
+int tiempo = 400;
+int digitalInput = 100;
+
 void setup() {
   // put your setup code here, to run once:
 
@@ -8,10 +10,15 @@ void setup() {
 }
 
 void loop() {
+  for(digitalInput = 40;digitalInput<95;digitalInput = digitalInput +10){
+    Serial.println(digitalInput);     // Print Digital input in Serial monitor
+    analogWrite(3, digitalInput);
+    delay(tiempo);
 
-    analogWrite(3, 255);
-    //delay(tiempo);
-    //analogWrite(3, 100);
-    //delay(tiempo);
+  }
+    digitalInput = 250;
+    Serial.println(digitalInput);     // Print Digital input in Serial monitor
+    analogWrite(3, digitalInput);
+    delay(tiempo*10);
 
 }
