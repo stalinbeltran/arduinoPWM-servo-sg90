@@ -10,13 +10,13 @@ void setup() {
 }
 
 void loop() {
-  digitalInput = 85;
+  digitalInput = 250;
 
     //Serial.println(digitalInput);     // Print Digital input in Serial monitor
     analogWrite(3, digitalInput);
     delay(tiempo);
 
-    digitalInput = 250;
+    digitalInput = 190;
     //Serial.println(digitalInput);
     analogWrite(3, digitalInput);
     delay(tiempo*10);
