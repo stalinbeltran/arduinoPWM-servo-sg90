@@ -12,12 +12,12 @@ void setup() {
 void loop() {
   digitalInput = 85;
 
-    Serial.println(digitalInput);     // Print Digital input in Serial monitor
+    //Serial.println(digitalInput);     // Print Digital input in Serial monitor
     analogWrite(3, digitalInput);
     delay(tiempo);
 
     digitalInput = 250;
-    Serial.println(digitalInput);     // Print Digital input in Serial monitor
+    //Serial.println(digitalInput);
     analogWrite(3, digitalInput);
     delay(tiempo*10);
 
