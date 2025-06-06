@@ -17,21 +17,16 @@ void loop() {
     Serial.println(comando);
   }
 
-  delay(3000);
-  Serial.println("estamos adentro");
-
   if (comando == "show"){
     digitalInput = 250;
     //Serial.println(digitalInput);     // Print Digital input in Serial monitor
     analogWrite(3, digitalInput);
-    delay(tiempo);
   }
 
   if (comando == "hide"){
     digitalInput = 190;
     //Serial.println(digitalInput);
     analogWrite(3, digitalInput);
-    delay(tiempo);
   }
 
 }
