@@ -11,12 +11,11 @@ void setup() {
 
 void loop() {
   digitalInput = 105;
-  //for(digitalInput = 105;digitalInput<106;digitalInput = digitalInput +15){
+
     Serial.println(digitalInput);     // Print Digital input in Serial monitor
     analogWrite(3, digitalInput);
     delay(tiempo);
 
-  //}
     digitalInput = 150;
     Serial.println(digitalInput);     // Print Digital input in Serial monitor
     analogWrite(3, digitalInput);
