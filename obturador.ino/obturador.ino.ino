@@ -16,7 +16,7 @@ void loop() {
     analogWrite(3, digitalInput);
     delay(tiempo);
 
-    digitalInput = 150;
+    digitalInput = 250;
     Serial.println(digitalInput);     // Print Digital input in Serial monitor
     analogWrite(3, digitalInput);
     delay(tiempo*10);
